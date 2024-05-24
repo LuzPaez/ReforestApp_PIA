@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "803076505347",
+    "project_id": "reforestapp-85127",
+    "storage_bucket": "reforestapp-85127.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:803076505347:android:7fa6ee8e8f6c40f87f3336",
+        "android_client_info": {
+          "package_name": "com.luzpaez.reforestapp_v5"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCG6kol5vs_7ikcT2J4eMYqT1AgynByfKM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

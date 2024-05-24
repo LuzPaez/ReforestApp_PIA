@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".Login">
+
+    <LinearLayout
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        tools:ignore="TextSizeCheck">
+
+        <FrameLayout
+            android:id="@+id/contenedorFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="40dp" />
+
+        <ImageView
+            android:layout_width="130sp"
+            android:layout_height="130sp"
+            android:layout_gravity="center"
+            android:contentDescription="@string/image"
+            app:srcCompat="@drawable/logo_notexto" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="45sp"
+            android:layout_gravity="center"
+            android:contentDescription="@string/texto"
+            android:scaleType="fitCenter"
+            android:src="@drawable/logo_texto" />
+
+
+        <TextView
+            android:id="@+id/txtIniciarSesion"
+            android:layout_width="match_parent"
+            android:layout_height="48sp"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="@string/iniciar_sesi_n"
+            android:textColor="@color/greensoft"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            tools:ignore="TextSizeCheck,TextContrastCheck" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="45sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/opensans_light"
+            android:gravity="start"
+            android:paddingStart="60sp"
+            android:paddingEnd="60sp"
+            android:text="@string/ingresa_tu_correo_electr_nico"
+            android:textColor="#000000"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/EdText_Correo"
+            android:layout_width="300sp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:autofillHints="emailAddress"
+            android:backgroundTint="#00AA64"
+            android:ems="10"
+            android:fontFamily="@font/opensans_light"
+            android:hint="@string/nombre_correo_com"
+            android:inputType="textEmailAddress"
+            android:paddingStart="8dp"
+            android:paddingEnd="8sp"
+            android:textSize="14sp"
+            tools:ignore="TextContrastCheck" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10sp"
+            android:fontFamily="@font/opensans_light"
+            android:gravity="start"
+            android:paddingStart="60sp"
+            android:paddingEnd="60sp"
+            android:text="@string/ingresa_tu_contrase_a"
+            android:textColor="#000000"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/EdText_Contrasena"
+            android:layout_width="300sp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:autofillHints="password"
+            android:backgroundTint="#00AA64"
+            android:ems="10"
+            android:fontFamily="@font/opensans_light"
+            android:hint="@string/contrase_a"
+            android:inputType="textPassword"
+            android:paddingStart="8dp"
+            android:paddingEnd="8sp"
+            android:textSize="14sp"
+            tools:ignore="TextContrastCheck" />
+
+        <TextView
+            android:id="@+id/Link_OlvidoContrasena"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20sp"
+            android:fontFamily="@font/opensans_bold"
+            android:gravity="end"
+            android:paddingStart="53sp"
+            android:paddingEnd="53sp"
+            android:text="@string/olvidaste_tu_contrase_a"
+            android:textColor="#689F38"
+            android:textColorLink="#7FF066"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btn_Ingresar"
+            android:layout_width="300dp"
+            android:layout_height="55dp"
+            android:layout_gravity="center"
+            android:layout_margin="30dp"
+            android:backgroundTint="@color/greensoft"
+            android:fontFamily="@font/opensans_bold"
+            android:text="@string/ingresar"
+            android:textSize="15sp"
+            app:cornerRadius="5sp"
+            tools:ignore="TextContrastCheck" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                tools:ignore="UselessParent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:fontFamily="@font/opensans_light"
+                    android:gravity="center"
+                    android:text="@string/no_tienes_una_cuenta"
+                    android:textColor="#000000"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <Space
+                    android:layout_width="8sp"
+                    android:layout_height="match_parent" />
+
+                <TextView
+                    android:id="@+id/Link_CrearCuenta"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:fontFamily="@font/opensans_bold"
+                    android:gravity="center"
+                    android:text="@string/crear_cuenta"
+                    android:textColor="#34B200"
+                    android:textColorLink="#7FF066"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    tools:ignore="TextContrastCheck" />
+
+            </LinearLayout>
+            <!-- activity_main.xml -->
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

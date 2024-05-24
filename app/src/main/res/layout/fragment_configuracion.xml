@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Configuracion">
+
+
+    <LinearLayout
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        tools:ignore="TextSizeCheck"
+        >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            />
+
+        <ImageView
+            android:id="@+id/imgLogo"
+            android:layout_width="150sp"
+            android:layout_height="150sp"
+            android:layout_gravity="center"
+            app:srcCompat="@drawable/logo"
+            android:contentDescription="@string/image" />
+
+        <TextView
+            android:id="@+id/txtConfiguracionCuenta"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:gravity="center"
+            android:text="@string/configuraci_n_de_cuenta"
+            android:textColor="@color/greensoft"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            tools:ignore="TextSizeCheck" />
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="15sp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingStart="30dp"
+            android:paddingEnd="30dp"
+            android:text="@string/aqu_puedes_cambiar_tu.."
+            android:textColor="@color/black"
+            android:fontFamily="@font/opensans_light"
+            android:textSize="13sp"
+            />
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20sp"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5sp"
+            android:gravity="start"
+            android:paddingStart="60sp"
+            android:paddingEnd="60sp"
+            android:text="@string/ingrese_un_nuevo_nombre_de_usuario"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:fontFamily="@font/opensans_light"/>
+
+        <EditText
+            android:id="@+id/EdText_NomUsuario"
+            android:layout_width="300sp"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:autofillHints="username"
+            android:backgroundTint="#00AA64"
+            android:ems="10"
+            android:fontFamily="@font/opensans_light"
+            android:hint="@string/nombre"
+            android:inputType="text"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:textSize="14sp"
+            tools:ignore="TextContrastCheck" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:paddingStart="60sp"
+            android:paddingEnd="60sp"
+            android:text="Agregué un número de teléfono"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:fontFamily="@font/opensans_light"
+            />
+
+        <EditText
+            android:id="@+id/EdText_Tel"
+            android:layout_width="300sp"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:autofillHints="emailAddress"
+            android:backgroundTint="#00AA64"
+            android:ems="10"
+            android:fontFamily="@font/opensans_light"
+            android:hint="Teléfono..."
+            android:inputType="number"
+            android:paddingStart="8dp"
+            android:paddingEnd="8sp"
+            android:textSize="14sp"
+            tools:ignore="TextContrastCheck" />
+
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="25sp"/>
+
+
+        <Button
+            android:id="@+id/btn_ActualizarDatos"
+            android:layout_width="300dp"
+            android:layout_height="55dp"
+            android:layout_gravity="center"
+            android:layout_margin="18dp"
+            android:backgroundTint="@color/greensoft"
+            android:fontFamily="@font/opensans_bold"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp"
+            app:cornerRadius="5dp"
+            tools:ignore="TextContrastCheck"
+            android:text="@string/actualizar_datos"/>
+
+
+    </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
